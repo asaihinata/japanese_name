@@ -2,6 +2,7 @@ import csv
 import os
 import random
 from pathlib import Path
+__all__=['Japansename','Manname','Womanname']
 Data_file_path=os.path.join(Path(__file__).parent,"data")
 Family_name=os.path.join(Data_file_path,"japanese_family_name.csv")
 def getcsv(path):
@@ -39,3 +40,13 @@ class Womanname:
         self.nameR=f"{self.familyname[3]} {self.data[3]}"
     def __iter__(self):return iter([self.name,self.namek,self.nameh,self.nameR])
     def __str__(self):return self.name
+if __name__=="__main__":
+    japanese_name=Japansename()
+    man_name=Manname()
+    woman_name=Womanname()
+    print(str(japanese_name))
+    print(list(japanese_name))
+    print(str(man_name))
+    print(list(man_name))
+    print(str(woman_name))
+    print(list(woman_name))
