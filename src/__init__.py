@@ -15,8 +15,7 @@ class Japansename:
         self.name=f"{self.familyname[0]} {self.data[0]}"
         self.namek=f"{self.familyname[1]} {self.data[1]}"
         self.nameh=f"{self.familyname[2]} {self.data[2]}"
-        self.nameR=f"{self.familyname[3]} {self.data[3]}"
-    def __iter__(self):return iter([self.name,self.namek,self.nameh,self.nameR])
+    def __iter__(self):return iter([self.name,self.namek,self.nameh])
     def __str__(self):return self.name
 class Manname:
     """日本人(男)の名前を作成する"""
@@ -26,8 +25,7 @@ class Manname:
         self.name=f"{self.familyname[0]} {self.data[0]}"
         self.namek=f"{self.familyname[1]} {self.data[1]}"
         self.nameh=f"{self.familyname[2]} {self.data[2]}"
-        self.nameR=f"{self.familyname[3]} {self.data[3]}"
-    def __iter__(self):return iter([self.name,self.namek,self.nameh,self.nameR])
+    def __iter__(self):return iter([self.name,self.namek,self.nameh])
     def __str__(self):return self.name
 class Womanname:
     """日本人(女)の名前を作成する"""
@@ -37,8 +35,7 @@ class Womanname:
         self.name=f"{self.familyname[0]} {self.data[0]}"
         self.namek=f"{self.familyname[1]} {self.data[1]}"
         self.nameh=f"{self.familyname[2]} {self.data[2]}"
-        self.nameR=f"{self.familyname[3]} {self.data[3]}"
-    def __iter__(self):return iter([self.name,self.namek,self.nameh,self.nameR])
+    def __iter__(self):return iter([self.name,self.namek,self.nameh])
     def __str__(self):return self.name
 if __name__=="__main__":
     japanese_name=Japansename()
